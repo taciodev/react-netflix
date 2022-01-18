@@ -9,3 +9,12 @@ body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
 }
+
+.lists {
+  margin-top: -150px;
+}
+
+footer {
+  margin: 50px 0px;
+  text-align: center;
+}

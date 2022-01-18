@@ -1,4 +1,4 @@
- // const API_KEY = ;
+const API_KEY = '6d72f6ab8ceb5c777e452c4fef274b28';
 const API_BASE = 'https://api.themoviedb.org/3';
 
 const basicFetch = async (endpoint) => {
@@ -55,7 +55,7 @@ export default {
   getMovieInfo: async (movieId, type) => {
     let info = {};
     if (movieId) {
-      switch (movieId) {
+      switch (type) {
         case 'movie':
           info = await basicFetch(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`);
           break;
