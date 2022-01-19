@@ -8,6 +8,7 @@ export default ({ item }) => {
   for (let i in item.genres) {
     genres.push(item.genres[i].name);
   }
+  let description = item.overview;
 
   return (
     <section className='featured' style={{
@@ -26,7 +27,7 @@ export default ({ item }) => {
               <div className="featured--seasons">{item.number_of_seasons} temperatura{item.number_of_seasons !== 1 ? 's' : ''}</div>
             </div>
 
-            <div className="featured--description">{item.overview}</div>
+            <div className="featured--description">{description}</div>
 
             <div className="featured--buttons">
               <a href={`/watch/${item.id}`} className="featured--watchbutton"><div>▶ Assistir</div></a>

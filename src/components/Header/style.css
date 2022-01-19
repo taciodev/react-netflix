@@ -29,3 +29,12 @@ header.black {
   height: 100%;
   border-radius: 3px;
 }
+
+@media (max-width: 760px) {
+  .header--logo{
+    height: 28px;
+  }
+  .header--user {
+    height: 40px;
+  }
+}
